@@ -1,0 +1,11 @@
+ WRONG way to use service !!!! Don't create instatnces manually ... 
+    
+    Use dependency injector instead & add in providers property of component
+    
+    const service = new LoggingService();
+    service.logStatusChange(accountStatus);
+    
+
+
+Also create service without importing @injectable. 
+If you import @injectable, then mention service name in provider in app.module
