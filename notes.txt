@@ -9,3 +9,24 @@
 
 Also create service without importing @injectable. 
 If you import @injectable, then mention service name in provider in app.module
+
+
+
+
+
+Hierarchial injector
+====================
+
+
+AppModule - Same instatnce of service is available Application-wide
+
+AppComponent - Same instatnce of service is available for all components (but not for other services). 
+                Instances don't propagate up, they only propagate down.
+
+Any other component (single component not having child component) - Same instatnce of service is available for the component & all its child components
+
+
+
+
+
+metadata to be attached , if one service is injected into other service
